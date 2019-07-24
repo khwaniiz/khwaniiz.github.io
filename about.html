@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About</title>
+    <link href="css/about.css" rel="stylesheet" type"text/css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Events
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="past.html">Past Events</a>
+                    <a href="#">Future Events</a>
+                </div>
+            </div>
+            <a href="about.html">About</a>
+            <a href="javascript:void(0)" class="icon" onclick="myfunction()">&#9776</a>
+        </div> 
+ 
+    <div id="main_menu">
+        <div class="logo_area">
+            <a href="index.html"><img src="C:/Users/John/Desktop/Chalermkhwan/PJ2/Cooking/Kee Nok/Graphics/KeeNokLogo.jpg" alt="logo"></a>
+        </div>
+        <div class="inner_main_menu">
+            <ul id="menu">
+                <li><a href="#">Events</a>
+                    <ul>
+                        <li><a href="past.html">Past Events</a></li>
+                        <li><a href="#">Future Events</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="story">
+        <div id="first"><p><b>KeeNok</b> is a pop up focused on authentic dishes from Thailand as well as a few of our favorites from around the Asian continent. 
+                The idea sprang from our desperate search to find dishes from Thailand that just aren’t currently available in Chicago. 
+                We determined the only way we could enjoy these foods was to make them ourselves and so our journey began. 
+                Through trial, error and a whole lot of Thai cooking Youtube videos, we learned how to make some really tasty stuff. 
+                We started inviting friends over to try our latest creations and that eventually lead to the birth of KeeNok.</p>
+        </div>
+        <div id="second"><p>A little background on us: Bote grew up in Bangkok, eating some of the best food the country has to offer. 
+                She is the official taste tester of KeeNok and makes sure everything is aroy (delicious). 
+                She also has a degree in computer engineering and spent countless hours building our website. 
+                John is from Savannah Georgia and is beyond obsessed with food from every part of the world, especially Southeast Asia. 
+                When he’s not in the kitchen he’s a practicing Landscape Architect.</p> 
+        </div>
+        
+        <div id="third"><p>KeeNok is hosted out of our small 2 bedroom apartment in Logan Square and seating is limited, 
+                which leads to a very communal dining experience. Our goal is to bring people together from 
+                all walks of life around unique, delicious food prepared with fresh, seasonal ingredients, many of which we grow in our garden. 
+                Please feel free to reach out with any questions. We are so excited to be able to share this food we love with friends both old and new.</p>
+        </div>
+        <div class="photo">
+            <img src="C:/Users/John/Desktop/Chalermkhwan/PJ2/pic/about.JPG" alt="photo">
+        </div>
+    
+    </div>
+     
+    <script>
+        const icon = document.querySelector(".icon")
+        const nav = document.querySelector(".topnav")
+            icon.onclick = function() {
+                nav.classList.toggle('responsive');
+            }
+    </script>
+
+  
+        
+</div>
+
+</body>
+
+</html>
+
+
+
