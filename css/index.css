@@ -100,7 +100,7 @@ body {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
     .topnav a:not(:first-child), .dropdown .dropbtn {
       display: none;
     }
