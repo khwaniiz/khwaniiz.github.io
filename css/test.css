@@ -185,6 +185,10 @@ body {
     width: 100%;
 	
  }
+ .logo {
+	 max-width: 300px;
+    position: absolute;
+ }
 
 #main_menu:after {
     content: "";
