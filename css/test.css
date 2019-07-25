@@ -1,3 +1,4 @@
+
 body {
     margin: auto;
     background: rgba(255, 255, 255, 0.945);
@@ -5,18 +6,6 @@ body {
     overflow: auto;
     height:100%; 
 
-}
-
-.wrap {
-    border: 20px solid #9fd7fd;
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 .topnav {
@@ -98,8 +87,7 @@ body {
     display:block;
 }
 
-
-@media screen and (max-width: 768p) {
+@media screen and (max-width: 768px) {
     .topnav a:not(:first-child), .dropdown .dropbtn {
       display: none;
     }
@@ -109,15 +97,8 @@ body {
       }
   }
 
-  .logo_area img {
-    max-width: 300px;
-    display: flex;
-    margin: 0 auto;
-  }
-
-
-     /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
- @media screen and (max-width: 768p) {
+ /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+ @media screen and (max-width: 768px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
       position: absolute;

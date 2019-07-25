@@ -1,44 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Kee Nok</title>
-    <link href="khwaniiz.github.io/css/test.css" rel="stylesheet" type"text/css">
+    <title>KeeNookThai</title>
+    <link href="css/test.css" rel="stylesheet" type"text/css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
- <div class="topnav" id="myTopnav">
-    <a href="test.html" class="active">Home</a>
-        <div class="dropdown">
-            <button class="dropbtn">Events
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="">Past Events</a>
-                <a href="#">Future Events</a>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Events
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="past.html">Past Events</a>
+                    <a href="#">Future Events</a>
+                </div>
             </div>
-        </div>
-    <a href="">About</a>
-    <a href="javascript:void(0)" class="icon" onclick="myfunction()">&#9776</a>
-</div> 
+        <a href="about.html">About</a>
+        <a href="javascript:void(0)" class="icon" onclick="myfunction()">&#9776</a>
+    </div> 
 
-<div class="wrap">
-    <div class="logo_area">
-        <a href="test.html"><img src="khwaniiz.github.io/image/Graphics/KeeNokLogo.jpg" alt="logo"></a>
-    </div>
     <script>
-        const icon = document.querySelector(".icon")
-        const nav = document.querySelector(".topnav")
-            icon.onclick = function() {
-                 nav.classList.toggle('responsive');
-            }
+            const icon = document.querySelector(".icon")
+            const nav = document.querySelector(".topnav")
+                icon.onclick = function() {
+                    nav.classList.toggle('responsive');
+                }
     </script>
-</div>
-
-
 </body>
-</html>
-
 
 
 
