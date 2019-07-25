@@ -115,7 +115,7 @@ body {
 }
 
 .inner_main_menu ul {
-    margin: 60px;
+    margin: 10px;
     padding: 0;
     list-style: none;
     text-align: right;
@@ -174,14 +174,10 @@ body {
     position: relative;
 }
 
-.logo_area img{
-    max-width: 300px;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    content: " ";
-    margin-left: -150px;
-    text-align: center;  
+.logo img{
+    max-width: 250px;
+    display: flex;
+    margin: 20px auto 0 auto; 
  }
 
  #main_menu:after {
