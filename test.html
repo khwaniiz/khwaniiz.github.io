@@ -2,69 +2,43 @@
 <html>
 <head>
     <title>Kee Nok</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="khwaniiz.github.io/css/test.css" rel="stylesheet" type"text/css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="topnav" id="myTopnav">
-        <a href="index.html" class="active">Home</a>
-            <div class="dropdown">
-                <button class="dropbtn">Events
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="past.html">Past Events</a>
-                    <a href="#">Future Events</a>
+ <div class="topnav" id="myTopnav">
+    <a href="test.html" class="active">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Events
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="">Past Events</a>
+                <a href="#">Future Events</a>
             </div>
         </div>
-        <a href="about.html">About</a>
-        <a href="javascript:void(0)" class="icon" onclick="myfunction()">&#9776</a>
-    </div>
+    <a href="">About</a>
+    <a href="javascript:void(0)" class="icon" onclick="myfunction()">&#9776</a>
+</div> 
 
-    <div id="main_menu">
-            <div class="logo_area">
-                <a href="test.html"><img src="khwaniiz.github.io/image/Graphics/KeeNokLogo.jpg" alt="logo"></a>
-            </div>
-            <div class="inner_main_menu">
-                <ul id="menu">
-                    <li><a href="#">Events</a>
-                        <ul>
-                            <li><a href="past.html">Past Events</a></li>
-                            <li><a href="#">Future Events</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </div>
-        </div>
-    
-        <h3 id="comingbox">Upcoming Popup!</h3>
-    
-    
-        <!--Popup Poster-->
-         <div class="poster">
-            <div id="poster1" href="#"><img src="khwaniiz.github.io/image/Graphics/keenok2.jpg" alt="KeeNok"></div>
-        </div>
-       
-    
-        <!--Popup Photos-->
-        <div class="thumbs">
-            <div id="Mian Kham" href="#"><img src="khwaniiz.github.io/image/Event_Photos/1/MianKham.png" alt="Mian Kham"></div>
-            <div id="Gai Tod" href="#"><img src="khwaniiz.github.io/image/Event_Photos/1/GaiTod.png" alt="Gai Tod"></div>
-            <div id="Tom Khao Pod" href="#"><img src="khwaniiz.github.io/image/Event_Photos/1/TomKhaoPod.png" alt="Tom Khao Pod"></div>
-        </div>  
-    
+<div class="wrap">
+    <div class="logo_area">
+        <a href="test.html"><img src="khwaniiz.github.io/image/Graphics/KeeNokLogo.jpg" alt="logo"></a>
+    </div>
     <script>
-            function myFunction() {
-              var x = document.getElementById("myTopnav");
-              if (x.className === "topnav") {
-                x.className += " responsive";
-              } else {
-                x.className = "topnav";
-              }
+        const icon = document.querySelector(".icon")
+        const nav = document.querySelector(".topnav")
+            icon.onclick = function() {
+                 nav.classList.toggle('responsive');
             }
-            </script>
+    </script>
+</div>
+
+
 </body>
 </html>
+
+
+
+
