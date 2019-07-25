@@ -178,11 +178,8 @@ body {
 .logo_area img{
     max-width: 300px;
     position: absolute;
-    left: 50%;
-    top: 0;
     content: " ";
-    margin-left: -150px;
-    text-align: center;  
+    left: 40%;  
  }
 
 #main_menu:after {
