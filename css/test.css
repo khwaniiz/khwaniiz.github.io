@@ -176,15 +176,13 @@ body {
     position: relative;
 }
 
-.logo_area img{
-   max-width: 300px;
-   position: absolute;
-   
-	
- }
+
  .logo img{
-	 max-width: 300px;
-    position: absolute;
+	
+    max-width: 300px;
+    display: block;
+  margin: 10px auto 0 auto;
+  width: 100%;
  }
 
 #main_menu:after {
