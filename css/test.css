@@ -184,6 +184,8 @@ body {
     content: " ";
     margin-left: -150px;
     text-align: center;  
+	width: 100%;
+	
  }
 
 #main_menu:after {
