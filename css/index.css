@@ -120,7 +120,7 @@ body {
     padding: 0;
     list-style: none;
     text-align: right;
-    padding-top: 30px;
+    padding-top: 20px;
     z-index: 1;
 
 }
@@ -170,16 +170,17 @@ body {
     font-size: 15px;   
 }
 
-#main_menu {
-    width: 100%;
-    position: relative;
-}
-
-.logo_area img{
+.logo img{
     max-width: 250px;
     display: flex;
     margin: 0 auto; 
  }
+
+#main_menu {
+    width: 100%;
+    position: relative;
+	margin: 0 auto; 
+}
 
 #main_menu:after {
     content: "";
