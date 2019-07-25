@@ -173,7 +173,7 @@ body {
 .logo img{
     max-width: 250px;
     display: flex;
-    margin: 0 auto; 
+    margin: 20px auto 0 auto; 
  }
 
 #main_menu {
