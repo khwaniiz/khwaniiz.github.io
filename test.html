@@ -1,56 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>KeeNookThai</title>
-    <link href="khwaniiz.github.io/css/test.css" rel="stylesheet" type"text/css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/test.css" type"text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <div class="topnav" id="myTopnav">
-        <a href="index.html" class="active">Home</a>
-            <div class="dropdown">
-                <button class="dropbtn">Events
-                    <i class="fa fa-caret-down"></i>
+        <nav class="navbar">
+                <a href="#" class="navbar-brand"><span>P</span><span>W</span></a>
+                <ul>
+                  <li><a href="#home">HOME</a></li>
+                  <li><a href="#css">SERVICES & RATES</a></li>
+                  <li><a href="#javascript">HOURS</a></li>
+                  <li><a href="#javascript">CONTACT ME</a></li>
+                </ul>
+                <button class="navbar-toggler">
+                  <span></span>
                 </button>
-                <div class="dropdown-content">
-                    <a href="past.html">Past Events</a>
-                    <a href="#">Future Events</a>
-                </div>
-            </div>
-        <a href="about.html">About</a>
-        <a href="javascript:void(0)" class="icon" onclick="myfunction()">&#9776</a>
-    </div>
-	
-	<div class="logo">
-           <img src="khwaniiz.github.io/image/Graphics/KeeNokLogo.jpg" alt="logo">
-       </div>
-
-    <div id="main_menu">
-        
-        <div class="inner_main_menu">
-            <ul id="menu">
-                <li><a href="#">Events</a>
-                    <ul>
-                        <li><a href="past.html">Past Events</a></li>
-                        <li><a href="#">Future Events</a></li>
-                    </ul>
-                </li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </div>
-    </div>	
-
-    <script>
-            const icon = document.querySelector(".icon")
-            const nav = document.querySelector(".topnav")
-                icon.onclick = function() {
-                    nav.classList.toggle('responsive');
-                }
-    </script>
+              </nav>
 </body>
-
-
-
+</html>
