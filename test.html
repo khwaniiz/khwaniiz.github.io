@@ -8,17 +8,37 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
-        <nav class="navbar">
-                <a href="#" class="navbar-brand"><span>P</span><span>W</span></a>
-                <ul>
-                  <li><a href="#home">HOME</a></li>
-                  <li><a href="#css">SERVICES & RATES</a></li>
-                  <li><a href="#javascript">HOURS</a></li>
-                  <li><a href="#javascript">CONTACT ME</a></li>
-                </ul>
-                <button class="navbar-toggler">
-                  <span></span>
-                </button>
-              </nav>
-</body>
+    <nav class="navbar">
+        <a href="#" class="navbar-brand"><span>P</span><span>W</span></a>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#css">SERVICES & RATES</a></li>
+            <li><a href="#javascript">HOURS</a></li>
+            <li><a href="#javascript">CONTACT ME</a></li>
+        </ul>
+        <button class="navbar-toggler">
+            <span></span>
+        </button>
+    </nav>
+    <script>
+      const navbarToggler = document.querySelector(".navbar-toggler");
+      const navbarMenu = document.querySelector(".navbar ul");
+      const navbarLinks = document.querySelectorAll(".navbar a");
+
+      navbarToggler.addEventListener("click", navbarTogglerClick);
+
+      function navbarTogglerClick() {
+        navbarToggler.classList.toggle("open-navbar-toggler");
+        navbarMenu.classList.toggle("open");
+      }
+
+      navbarLinks.forEach(elem => elem.addEventListener("click", navbarLinkClick));
+
+      function navbarLinkClick() {
+        if(navbarMenu.classList.contains("open")) {
+        navbarToggler.click();
+      }
+  }
+    </script>
+  </body>
 </html>
