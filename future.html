@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kee Nok</title>
+    <link href="khwaniiz.github.io/css/index.css" rel="stylesheet" type"text/css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="wrap">
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Events
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="past.html">Past Events</a>
+                    <a href="#">Future Events</a>
+                </div>
+            </div>
+            <a href="about.html">About</a>
+            <a href="javascript:void(0)" class="icon" onclick="myfunction()">&#9776</a>
+        </div> 
+ 
+     <div class="logo">
+         <a href="#"><img src="khwaniiz.github.io/image/Graphics/KeeNokLogo.jpg" alt="logo"></a>
+      </div>
+	
+	<div id="main_menu">
+       <div class="inner_main_menu">
+            <ul id="menu">
+                <li><a href="#">Events</a>
+                    <ul>
+                        <li><a href="past.html">Past Events</a></li>
+                        <li><a href="#">Future Events</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </div>
+
+    
+
+
+    <!--Popup Poster-->
+     <div class="poster">
+        <div id="poster1" href="#"><img src="khwaniiz.github.io/image/Graphics/keenok2.jpg" alt="KeeNok"></div>
+    </div>
+   
+
+ 
+    <script>
+        const icon = document.querySelector(".icon")
+        const nav = document.querySelector(".topnav")
+            icon.onclick = function() {
+                nav.classList.toggle('responsive');
+            }
+    </script>
+
+    <div class="footer">
+        <h5>Contact: KeeNokThai@gmail.com</h5>
+    </div>
+</div>
+
+
+</body>
+</html>
+
+
+
