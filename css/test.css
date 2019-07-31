@@ -6,12 +6,17 @@
 
 body {
     font-family: 'Montserrat', Arial, sans-serif;
-    background-color: #705944;
     color: #333;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    background: #FBEAEB;
+    font: normal 100%/1.4;
+
 }
   
 .navbar {
-    background-color: rgb(103, 167, 199);
+    background-color: #2F3C7E;
     color: #fff;
     border-bottom: 1px solid rgba(255,255,255,0.2);
     width: 100%;
@@ -23,11 +28,14 @@ body {
     top: 0;
     left: 0;
     z-index: 10;
+    
+
   }
 
 .navbar a {
     text-decoration: none;
     color: #fff;
+    
 }
 
 .navbar a.navbar-brand {
@@ -67,7 +75,7 @@ body {
 
 .navbar ul li a:hover {
     color: black;
-    background-color: rgb(171, 221, 248);
+    background-color: #d1d7f5;
     font-weight: 700;
 }
 
@@ -81,54 +89,144 @@ navbar:after {
     clear: both;
 }
 
-.intro {
-    display: block;
-    text-align: center;
-    color: white;
-    position: relative;
-    top: 25vh;
-}
-
-.description p {
-    position: relative;
-    text-align: left;
-    text-align: center;
-    margin: auto;
-    font-size: 16px;
-    text-indent: 30px;
-    text-align: justify;
-    letter-spacing: 0.1px;
-    margin-top: 40px;
-    padding: 20px; 
-}
-
-.image img {
-    position: relative;
-    display: blocek;
-    margin: auto;
-    max-width: 400px;
-    width: 100%;
-    padding: 20px;  
-      
-}
-
-
-
-
-
-
-
-
-
-
-
   
+section {
+    border-bottom: 1px solid #FBEAEB;
+    text-align: center;
+    padding: 80px 0 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #FBEAEB;
+}
+
+
+
+.container h1 {
+    padding: 50px 0 0;
+    
+}
+
+.container h2 {
+    margin-bottom: .5em;
+    font-size: 22px;
+    
+}
+  
+.container p {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 5px;
+    font-size: 18px;
+    text-align: left;
+    text-indent: 30px;
+  
+}
+
+#service h2 {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 5px;
+    text-align: left;
+    text-indent: 30px;
+    margin-bottom: .5em;
+    font-size: 22px;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 50px;
+    margin: 25px auto;
+    padding: 20px;
+    background-color:  #f2f2f2;
+}
+
+td, th {
+    border-top: 1px solid #999797;
+    border-bottom: 1px solid #999797;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #2F3C7E;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #2F3C7E;
+  }
+  
+  .contact-form {
+    border-radius: 5px;
+    background-color: #FBEAEB;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+   
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =================================media=============================== */
+
 @media (max-width: 991px) {
 
-.intro h2 {
-        font-size: 20px;
-         
-    }
+
 
 .navbar ul {
     padding: 0 10px;
@@ -141,10 +239,10 @@ navbar:after {
 
 @media (max-width: 795px) {
 
- .intro h2 {
-        font-size: 20px;
-         
-    }
+.container h2, #service h2 { 
+        font-size: 18px;    
+}
+
 
 .navbar {
     padding: 0;
@@ -163,7 +261,7 @@ navbar:after {
     
 .navbar ul.open {
     max-height: 100vh;
-    background-color: #705944;
+    background-color: #2F3C7E;
     }
     
 .navbar ul li {
