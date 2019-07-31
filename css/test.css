@@ -242,6 +242,10 @@ input[type=text], textarea {
 .container h2, #service h2 { 
         font-size: 18px;    
 }
+    
+.container p {
+    font-size: 16px;  
+}
 
 
 .navbar {
