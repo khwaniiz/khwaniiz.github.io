@@ -1,0 +1,387 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: #333;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    background-color: #FBEAEB;
+    font: normal 100%/1.4;
+
+}
+  
+.navbar {
+    background-color:#2F3C7E;
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    font-size: 18px;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    
+
+  }
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.navbar a.navbar-brand {
+    float: left;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 30px;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.navbar a.navbar-brand span {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.navbar ul {
+    float: right;
+    list-style: none;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 50px;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    display: block;
+    text-align: center;
+    min-width: 120px;
+    padding: 0 30px;
+}
+
+.navbar ul li a:hover {
+    color: black;
+    background-color: #d1d7f5;
+    font-weight: 700;
+}
+
+.navbar .navbar-toggler {
+    display: none;
+}
+
+navbar:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+  
+section {
+    border-bottom: 1px solid #FBEAEB;
+    text-align: center;
+    padding: 80px 0 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #FBEAEB;
+}
+
+
+
+.container h1 {
+    padding: 50px 0 0;
+    
+}
+
+.container h2 {
+    margin-bottom: .5em;
+    font-size: 22px;
+    
+}
+  
+.container p {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 5px;
+    font-size: 18px;
+    text-align: left;
+    text-indent: 30px;
+  
+}
+
+#service h2 {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 5px;
+    text-align: left;
+    text-indent: 30px;
+    margin-bottom: .5em;
+    font-size: 22px;
+}
+
+/* relevant styles */
+.img__wrap {
+    position: relative;
+    height: 200px;
+    max-width: 300px;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .img__description_layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(36, 62, 206, 0.6);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+  }
+  
+  .img__wrap:hover .img__description_layer {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .img__description {
+    transition: .2s;
+    transform: translateY(1em);
+  }
+  
+  .img__wrap:hover .img__description {
+    transform: translateY(0);
+  }
+
+
+
+  .table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 50px;
+    margin: 25px auto;
+    padding: 20px;
+    background-color:  #f2f2f2;
+}
+
+td, th {
+    border-top: 1px solid #999797;
+    border-bottom: 1px solid #999797;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #2F3C7E;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #2F3C7E;
+  }
+  
+  .contact-form {
+    border-radius: 5px;
+    background-color: #FBEAEB;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+   
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =================================media=============================== */
+
+@media (max-width: 991px) {
+
+
+
+.navbar ul {
+    padding: 0 10px;
+}
+.navbar ul li a {
+    min-width: 100px;
+    padding: 0 20px;
+    }
+}
+
+@media (max-width: 795px) {
+
+section {
+    display: inline-block;
+}
+.row {
+    display: inline-block;
+}
+
+.container h2, #service h2 { 
+    font-size: 18px;    
+}
+
+.container p {
+    font-size: 16px;  
+}
+
+
+.navbar {
+    padding: 0;
+    }
+
+.navbar ul {
+    width: 100%;
+    padding: 0;
+    background-color: rgba(0,0,0,0.9);
+    /*height: auto;*/
+    height: 100vh;
+    max-height: 0;
+    overflow: hidden;
+    transition: all ease-in-out 0.3s;
+    }   
+    
+.navbar ul.open {
+    max-height: 100vh;
+    background-color: #2F3C7E;
+    }
+    
+.navbar ul li {
+    width: 100%;
+    /* border-bottom: 1px solid rgba(255,255,255,0.3); */
+    }
+
+.navbar ul li a {
+    padding: 0;
+    }
+
+.navbar .navbar-toggler {
+    display: block;
+    position: absolute;
+    height: 40px;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: #fff;
+    border: 3px solid #fff;
+    /* border: none; */
+    /* border-radius: 4px; */
+    outline: none;
+    padding: 0 5px;
+    cursor: pointer;
+    }
+
+.navbar .navbar-toggler span,
+.navbar .navbar-toggler span::before,
+.navbar .navbar-toggler span::after {
+    display: block;
+    content: '';
+    background-color: #fff;
+    height: 3px;
+    width: 28px;
+    border-radius: 4px;
+    transition: all ease-in-out 0.5s;
+    }
+
+.navbar .navbar-toggler span::before {
+    transform: translateY(-8px);
+    }
+
+.navbar .navbar-toggler span::after {
+    transform: translateY(5px);
+    }
+    
+.navbar .navbar-toggler.open-navbar-toggler span {
+    /* transform: rotate(90deg); */
+    background-color: transparent;
+    /* transform: scale(0.85) rotate(270deg); */
+    }
+
+.navbar .navbar-toggler.open-navbar-toggler span::before {
+    transform: translateY(0px) rotate(45deg);
+    /* transform: translateY(0px) scale(0.75) rotate(45deg); */
+    }
+
+.navbar .navbar-toggler.open-navbar-toggler span::after {
+    transform: translateY(-3px) rotate(-45deg);
+    /* transform: translateY(-3px) scale(0.75) rotate(-45deg); */
+    }
+
+.col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+      }
+}
