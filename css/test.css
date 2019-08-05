@@ -10,13 +10,13 @@ body {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     text-size-adjust: 100%;
-    background: #FBEAEB;
+    background-color: #FBEAEB;
     font: normal 100%/1.4;
 
 }
   
 .navbar {
-    background-color: #2F3C7E;
+    background-color:#2F3C7E;
     color: #fff;
     border-bottom: 1px solid rgba(255,255,255,0.2);
     width: 100%;
@@ -134,7 +134,51 @@ section {
     font-size: 22px;
 }
 
-.table {
+/* relevant styles */
+.img__wrap {
+    position: relative;
+    height: 200px;
+    max-width: 300px;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .img__description_layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(36, 62, 206, 0.6);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+  }
+  
+  .img__wrap:hover .img__description_layer {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .img__description {
+    transition: .2s;
+    transform: translateY(1em);
+  }
+  
+  .img__wrap:hover .img__description {
+    transform: translateY(0);
+  }
+
+
+
+  .table {
     border-collapse: collapse;
     width: 100%;
     max-width: 900px;
@@ -239,10 +283,17 @@ input[type=text], textarea {
 
 @media (max-width: 795px) {
 
-.container h2, #service h2 { 
-        font-size: 18px;    
+section {
+    display: inline-block;
 }
-    
+.row {
+    display: inline-block;
+}
+
+.container h2, #service h2 { 
+    font-size: 18px;    
+}
+
 .container p {
     font-size: 16px;  
 }
@@ -328,4 +379,9 @@ input[type=text], textarea {
     transform: translateY(-3px) rotate(-45deg);
     /* transform: translateY(-3px) scale(0.75) rotate(-45deg); */
     }
+
+.col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+      }
 }
