@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/service.css" type"text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<title>SERVICES & RATES</title>
+</head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="navbar-brand"><span>P</span><span>W</span></a>
+      <ul>
+        <li><a href="file:///C:/Users/chalermkhwan/Documents/Pom/test.html#home">HOME</a></li>
+        <li><a href="#file:///C:/Users/chalermkhwan/Documents/Pom/test.html#service">SERVICES & RATES</a></li>
+        <li><a href="file:///C:/Users/chalermkhwan/Documents/Pom/test.html#hour">HOURS</a></li>
+        <li><a href="file:///C:/Users/chalermkhwan/Documents/Pom/test.html#contact">CONTACT</a></li>
+      </ul>
+      <button class="navbar-toggler">
+        <span></span>
+      </button>
+    </nav>
+
+    <div class="swedish-container" id="swedish">
+      <h2>SWEDISH MASSAGE</h2>
+      <h3>60 MINUTES: $65 | 90 MINUTES: $90</h3> 
+      <img src="C:\Users\chalermkhwan\Documents\Pom\image\swedish.jpg" alt="swedish-massage">
+      <p>Swedish Massage is a very relaxing and therapeutic style of bodywork. 
+        It combines oils or lotion with an array of strokes such as rolling, kneading, 
+        and percussion to help the body improve its circulation. The benefits of this 
+        type of bodywork are wide-ranging and include relief from aches and pains, 
+        decreased stress levels in the body, enhanced mental clarity, improved appearance, and greater flexibility.</p> 
+    </div>
+
+    <div class="container" id="deep">
+      <h2>DEEP TISSUE MASSAGE</h2>
+      <h3>60 MINUTES: $65 | 90 MINUTES: $90</h3> 
+      <img src="C:\Users\chalermkhwan\Documents\Pom\image\deepTissue.jpg" alt="DeepTissueMassage">
+      <p>Deep Tissue Massage is a form of bodywork that aims to relieve tension in the deeper layers of tissue in the body. 
+        Deep Tissue Massage is a highly effective method for releasing chronic stress areas due to misalignment, 
+        repetitive motions, and past lingering injuries. Due to the nature of the deep tissue work, open communication 
+        during the session is crucial to make sure you don't get too uncomfortable. Keep in mind that soreness is 
+        pretty common after the treatment, and that plenty of water should be ingested to aid with the flushing and 
+        removal of toxins that will have been released from the deep tissue during the session.</p> 
+    </div>
+    <div class="container" id="sport">
+        <h2>SPORTS MASSAGE</h2>
+        <h3>60 MINUTES: $65 | 90 MINUTES: $90</h3> 
+        <img src="C:\Users\chalermkhwan\Documents\Pom\image\sports.jpg" alt="SportsMassage">
+        <p>Sports Massage is a type of massage designed for highly active people who engage in athletics. 
+          Engaging in sports is harsh on the body and can often lead to injuries in both the short and long term. 
+          Sports Massage enhances performance and prolongs a sports career by helping to prevent injury, 
+          reduce pains and swelling in the body, relax the mind, increase flexibility, and dramatically improve recovery rates. 
+          Sports Massage is also highly effective in aiding the rapid recovery of an athlete from an injury by 
+          encouraging greater kinesthetic awareness and in turn promoting the body's natural immune function.</p> 
+      </div>
+
+      <div class="container" id="trigger">
+        <h2>TRIGGER POINT THERAPY</h2>
+        <h3>60 MINUTES: $65 | 90 MINUTES: $90</h3> 
+        <img src="C:\Users\chalermkhwan\Documents\Pom\image\trigger.jpg" alt="TriggerPointTherapy">
+        <p>Trigger Point Therapy is a style of bodywork that focuses on stimulating and releasing "trigger points" in your body. 
+          Trigger points are tender areas of tension similar to acupressure points, except they occur in the belly of 
+          the muscle rather than along the energy pathways of the body. These "knots" are built up throughout a person's life due to physical, 
+          mental, and/or emotional stress. During a session, focused pressure is applied through a variety of techniques order to release 
+          your trigger points. This process can be quite painful at times, yet the effects are lasting and profoundly transformative.</p> 
+      </div>
+    
+    
+
+   
+
+    <script>
+            const navbarToggler = document.querySelector(".navbar-toggler");
+            const navbarMenu = document.querySelector(".navbar ul");
+            const navbarLinks = document.querySelectorAll(".navbar a");
+      
+            navbarToggler.addEventListener("click", navbarTogglerClick);
+      
+            function navbarTogglerClick() {
+              navbarToggler.classList.toggle("open-navbar-toggler");
+              navbarMenu.classList.toggle("open");
+            }
+      
+            navbarLinks.forEach(elem => elem.addEventListener("click", navbarLinkClick));
+      
+            function navbarLinkClick() {
+              if(navbarMenu.classList.contains("open")) {
+              navbarToggler.click();
+            }
+        }
+    </script>
+</body>
+</html>
