@@ -10,7 +10,7 @@ body {
 
 .wrap {
     border: 20px solid #9fd7fd;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
