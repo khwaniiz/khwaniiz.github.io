@@ -242,6 +242,9 @@ body {
 .row .image img {
     max-width: 300px;
     width: 100%;
+    display:block;
+    margin:auto;
+   
    
 }
 
