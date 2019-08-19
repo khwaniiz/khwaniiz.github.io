@@ -10,7 +10,7 @@ body {
 
 .wrap {
     border: 20px solid #9fd7fd;
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -178,7 +178,7 @@ body {
 #main_menu {
     width: 100%;
     position: relative;
-margin-top: -95px
+	margin-top: -95px 
 }
 
 #main_menu:after {
@@ -194,7 +194,7 @@ margin-top: -95px
     margin: 50px auto 50px auto; 
 }
 
-.footer {
+.footer, h3 {
     text-align: center;
     color:rgb(138, 138, 138);
 }
@@ -240,3 +240,4 @@ margin-top: -95px
         
     }
 }
+
