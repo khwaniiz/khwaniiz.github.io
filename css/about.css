@@ -277,6 +277,10 @@ body {
     .topnav {
         display: none;
     }
+    
+      .row {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 769px) {
