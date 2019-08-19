@@ -172,6 +172,7 @@ body {
 #main_menu {
     width: 100%;
     position: relative;
+    margin-top: -95px;
 }
 
 .logo img{
@@ -195,22 +196,52 @@ body {
     width: 100%; 
     letter-spacing: 1.5px;
     color:rgb(104, 102, 102);
+    justify-content: space-between;
     
 }
 
-.column {
-    background-color: rgb(255, 255, 255); 
-    flex: 100%; 
+.column-e-1 {
+    background-color:white;  
+    flex: 33%;
+    padding: 10px;
+    
+    
+}
+.column-e-2 {
+    background-color:white; 
+    flex: 33%;
+    padding: 10px;
+    
+    
+}
+.column-e-3 {
+    background-color:white; 
+    flex: 33%;
+    padding: 10px;
+    border-radius: 50px;
 }
 
-.column .image img {
+.column-e-1 .image img {
     max-width: 300px;
     width: 100%; 
     display: flex;
     margin: 0 auto;
-    border-radius: 10%;
-    padding: 20px;
    
+}
+
+.column-e-2 .image img {
+    max-width: 300px;
+    width: 100%; 
+    display: flex;
+    margin: 0 auto;
+   
+}
+
+.column-e-3 .image img {
+    max-width: 300px;
+    width: 100%; 
+    display: flex;
+    margin: 0 auto;
    
 }
 
