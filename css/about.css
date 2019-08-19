@@ -280,5 +280,12 @@ body {
     .inner_main_menu {
         visibility: hidden;
     }
+     .row {
+        flex-direction: column;
+    }
+
+    .image {
+        width: 100%;
+    }
 }
 
