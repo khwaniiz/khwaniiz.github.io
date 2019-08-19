@@ -229,18 +229,17 @@ body {
 
 .photo img{
     max-width: 300px;
-    border-style: solid;
-    border-color: rgb(211, 211, 211);
-    display: flex;
     margin: 0 auto;
     width: 100%;
 }
 
 .photo {
     background-color: rgb(241, 250, 203);
+    display: flex;
     padding: 10px;
-    margin: 0 auto;
+    margin: 0 auto; 
     max-width: 800px;
+    height: 100%;  
 }
 
 
