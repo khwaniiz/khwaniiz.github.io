@@ -305,18 +305,8 @@ h2 {
     text-align: center;
 }
 
-h1 {
+h1, h3, h5 {
     margin: 100px auto 0 auto;
-    height: 100%;
-    position: relative;
-    max-width: 1200px;
-    width: 100%; 
-    letter-spacing: 1.5px;
-    color:rgb(75, 74, 74);
-}
-
-h5 {
-    margin: 0 auto;
     height: 100%;
     position: relative;
     max-width: 1200px;
