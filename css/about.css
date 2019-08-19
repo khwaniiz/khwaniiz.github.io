@@ -227,21 +227,22 @@ body {
     height: 100%;   
 }
 
-.photo img{
-    max-width: 300px;
-    margin: 0 auto;
-    width: 100%;
+.row {
     display: flex;
+    background-color: rgb(224, 253, 255); 
+    color:rgb(138, 138, 138);
+    margin: 0 auto;
+    max-width: 800px;
+    height: 100%; 
+    padding: 10px;
     
 }
 
-.photo {
- background-color: rgb(241, 250, 203);
-    display: flex;
-     margin: 0 auto;
-    max-width: 800px;
-    
-    
+
+.image img {
+    max-width: 300px;
+    width: 100%;
+   
 }
 
 
