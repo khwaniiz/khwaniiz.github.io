@@ -187,6 +187,41 @@ body {
     clear: both;
   }
 
+.Popup-menu {
+    margin: 0 auto;
+    width: 100%; 
+}
+
+.Popup-menu ul {
+    padding: 0;
+    list-style: none;
+    text-align: right;
+    z-index: 1;
+    
+
+}
+
+.Popup-menu ul li {
+    float: none;
+    display: inline-block;
+    position: relative;  
+    text-decoration: none;
+           
+}
+
+.Popup-menu ul li a {
+    color: #262626;
+    text-decoration: none;
+    padding: 10px 10px;
+    display: block;
+}
+
+.Popup-menu ul li a:hover{
+   color: red;   
+   text-decoration: none;    
+}
+
+
 .row {
     display: flex;
     margin: 10px auto 0 auto;
