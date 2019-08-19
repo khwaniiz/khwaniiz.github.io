@@ -172,6 +172,7 @@ body {
 #main_menu {
     width: 100%;
     position: relative;
+    margin-top: -95px;
 }
 
 .logo img{
@@ -191,7 +192,7 @@ body {
     background-color: rgb(237, 252, 223);
     color:rgb(138, 138, 138);
     padding: 10px;
-    margin: 50px auto 0 auto;
+    margin: 10px auto 0 auto;
     text-indent: 30px;
     text-align: justify;
     letter-spacing: 1.5px;
