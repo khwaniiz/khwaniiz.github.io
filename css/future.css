@@ -178,7 +178,7 @@ body {
 #main_menu {
     width: 100%;
     position: relative;
-	margin: 0 auto; 
+margin-top: -95px
 }
 
 #main_menu:after {
