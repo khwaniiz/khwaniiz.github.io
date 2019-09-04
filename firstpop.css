@@ -1,0 +1,158 @@
+.row {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+ 
+
+.column-e-1 {
+    background-color:white;  
+    flex: 33%;
+    padding: 10px;
+    
+    
+    
+}
+.column-e-2 {
+    background-color:white; 
+    flex: 33%;
+    padding: 10px;
+    
+    
+}
+.column-e-3 {
+    background-color:white; 
+    flex: 33%;
+    padding: 10px;
+    
+}
+
+.column-e-1 .image img {
+    max-width: 300px;
+    width: 100%; 
+    display: flex;
+    margin: 0 auto;
+   
+}
+
+.column-e-2 .image img {
+    max-width: 300px;
+    width: 100%; 
+    display: flex;
+    margin: 0 auto;
+   
+}
+
+.column-e-3 .image img {
+    max-width: 300px;
+    width: 100%; 
+    display: flex;
+    margin: 0 auto;
+   
+}
+
+
+.column1 {
+    background-color: rgb(255, 224, 224); 
+    flex: 25%;
+    padding: 10px;
+    margin: 5px;
+    
+}
+
+.column2 {
+    background-color: rgb(232, 255, 210);
+    flex: 25%;
+    padding: 10px;
+    margin: 5px;
+}
+
+.column3 {
+    background-color: rgb(248, 248, 172); 
+    flex: 25%;
+    padding: 10px;
+    margin: 5px;
+}
+
+.column4 {
+    background-color: rgb(233, 233, 233);
+    flex: 25%;
+    padding: 10px;
+    margin: 5px;
+}
+
+.column1 .image img {
+    max-width: 300px;
+    width: 100%; 
+    display: flex;
+    margin: 0 auto;
+   
+   
+}
+
+.column2 .image img {
+    max-width: 300px;
+    width: 100%; 
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.column3 .image img {
+    max-width: 260px;
+    width: 100%; 
+    display: flex;
+    margin: 0 auto;
+}
+
+.column4 .image img {
+    max-width: 300px;
+    width: 100%; 
+    display: flex;
+    margin: 0 auto;
+}
+
+
+
+
+h3 {
+    margin: 10px auto;
+    text-align: center;
+
+}
+
+h1, h5 {
+    margin: 5px auto;
+    height: 100%;
+    top: 50px;
+    position: relative;
+    width: 100%; 
+    letter-spacing: 1.5px;
+    color:rgb(75, 74, 74);
+   
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 736px){
+
+
+.row {
+    flex-direction: column;
+}
+
+.column {
+    width: 100%;
+}
+
+h1, h5 {
+    top: 20px;    
+}
+ 
+}
+
