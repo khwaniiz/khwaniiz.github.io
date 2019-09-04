@@ -1,61 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Kee Nok</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="khwaniiz.github.io/css/index.css" rel="stylesheet" type"text/css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="khwaniiz.github.io/css/style.css" rel="stylesheet" type"text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kee Nok</title>
+    <style>
+        body {
+            background-color:#9fd7fd; 
+        }
+    </style>
+
+    <!--Mobile Nav Bar-->
+    
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeTopNav()">&times;</a>
+            
+            <div class="overlay-content" id="menu" onclick="closeTopNav()">
+                <a href="index.html">Home</a>
+                <a href="pastpage.html">Past Events</a>
+                <a href="future.html">Future Events</a>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+    <div class="topNav">
+        <span onclick="openTopNav()">&#9776;</span>
+        <div class="logo"><a href="index.html"><img src="khwaniiz.github.io/image/Graphics/KeeNokLogo.jpg" alt="logo"></a></div>
+    </div>
 </head>
+
 <body>
+
+    <!--Desktop Nav Bar-->
     <div class="wrap">
-        <div class="topnav" id="myTopnav">
-            <a href="index.html" class="active">Home</a>
-            <div class="dropdown">
-                <button class="dropbtn">Events
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="past.html">Past Events</a>
-                    <a href="future.html">Future Events</a>
+        <div class="main_menu" id="main_menu">
+            <div class="logo_desktop"><a href="index.html"><img src="khwaniiz.github.io/image/Graphics/KeeNokLogo.jpg" alt="logo"></a></div>
+                <div class="inner_main_menu">
+                    <ul id="menu">
+                        <li><a href="#">Events</a>
+                            <ul>
+                                <li><a href="pastpage.html">Past Events</a></li>
+                                <li><a href="future.html">Future Events</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
                 </div>
             </div>
-            <a href="about.html">About</a>
-            <a href="javascript:void(0)" class="icon" onclick="myfunction()">&#9776</a>
-        </div> 
- 
-     <div class="logo">
-         <a href="#"><img src="khwaniiz.github.io/image/Graphics/KeeNokLogo.jpg" alt="logo"></a>
-      </div>
-	
-	<div id="main_menu">
-       <div class="inner_main_menu">
-            <ul id="menu">
-                <li><a href="#">Events</a>
-                    <ul>
-                        <li><a href="past.html">Past Events</a></li>
-                        <li><a href="future.html">Future Events</a></li>
-                    </ul>
-                </li>
-                <li><a href="about.html">About</a></li>
-            </ul>
+            
+          <!--Popup Photos-->
+            <div class="photo-collection">
+                <div id="Mian Kham" href="#"><img src="khwaniiz.github.io/image/Event_Photos/1/MianKham.png" alt="Mian Kham"></div>
+                <div id="Gai Tod" href="#"><img src="khwaniiz.github.io/image/Event_Photos/1/GaiTod.png" alt="Gai Tod"></div>
+                <div id="Tom Khao Pod" href="#"><img src="khwaniiz.github.io/image/Event_Photos/1/TomKhaoPod.png" alt="Tom Khao Pod"></div>
+            </div>
+            
+            
+            <div class="footer">
+                    <h4><a href="contact.html">CONTACT</a></h4>
+            </div>
         </div>
+
+        
     </div>
 
+        
+  
 
 
-    <!--Popup Poster
-     <div class="poster">
-        <div id="poster1" href="#"><img src="khwaniiz.github.io/image/Graphics/keenok2.jpg" alt="KeeNok"></div>
-    </div> -->
-   
 
-    <!--Popup Photos-->
-    <div class="thumbs">
-        <div id="Mian Kham" href="#"><img src="khwaniiz.github.io/image/Event_Photos/1/MianKham.png" alt="Mian Kham"></div>
-        <div id="Gai Tod" href="#"><img src="khwaniiz.github.io/image/Event_Photos/1/GaiTod.png" alt="Gai Tod"></div>
-        <div id="Tom Khao Pod" href="#"><img src="khwaniiz.github.io/image/Event_Photos/1/TomKhaoPod.png" alt="Tom Khao Pod"></div>
-    </div>  
+
+
+
+
+
+
+
+
+
+    <script>
+        function openTopNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+    function closeTopNav() {
+        document.getElementById("myNav").style.width = "0%";
+        }
+</script>
+
+</body>
+</html>
+
+
+
+
    
     <script>
         const icon = document.querySelector(".icon")
