@@ -1,0 +1,70 @@
+
+h2 {
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 50px;
+  margin: 20px  10px 20pa 10px;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+    
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 10px;
+  padding: 10px;
+}
+  
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 10px;
+  padding: 10px;
+}
+  
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  margin: 5px 0;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button[type=submit] {
+  width: 100%;
+  background-color:  rgb(253, 216, 93); 
+  color: black;
+  border: none;  
+  padding: 14px 20px;
+  margin: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 200px;
+
+}
+
+button[type=submit]:hover {
+  background-color:  rgb(253, 229, 151);
+  color: rgb(51, 50, 50);
+  font-weight: 800px; 
+    
+}
+
+label {
+  font-size: 18px;
+}

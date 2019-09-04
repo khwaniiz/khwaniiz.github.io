@@ -1,0 +1,260 @@
+/*MY CODE*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', 'sans-serif';
+    
+    
+}
+
+body {
+    margin: auto;
+    font-family: 'Ubuntu', 'sans-serif';
+    overflow: auto;
+    height:100%; 
+    border: 20px solid #9fd7fd;
+    background-color: #9fd7fd;
+    position: relative;
+}
+
+.wrap {
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 30px;
+    box-sizing: border-box;
+    
+}
+
+.topNav {
+    position: fixed;
+    background-color:white;
+    color: black;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    font-size: 18px;
+    padding: 0 30px;
+    top: 0;
+    left: 0;
+    z-index: 1;  
+    
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    background-color: #9fd7fd;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    
+    
+}
+
+.overlay a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 36px;
+    color:white;
+    display: block;
+    transition: 0.4s;
+}
+
+.overlay a:hover, .overlay a:focus, span:hover {
+    color:red;
+    text-decoration: none;
+
+  }
+
+.overlay .closebtn {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    font-size: 60px;
+    
+    
+}
+
+span {
+    position: fixed;
+    right: 10px;
+    top: -5px;
+    text-align: right;
+    font-size:30px;
+    cursor:pointer;
+    padding: 10px;
+    
+}
+
+.logo img {
+    position: fixed;
+    left: 10px;
+    width: 100%;
+    max-width: 155px;
+    padding: 10px; 
+    top: -5px;
+    cursor:pointer;
+}
+
+
+.logo_desktop img {
+    width: 100%;
+    max-width: 250px; 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  
+
+}
+
+.main_menu {
+    width: 100%;
+    position: relative;
+    
+}
+
+.inner_main_menu {
+    margin: 0 auto;
+    width: 100%; 
+}
+
+.inner_main_menu ul {
+    margin: 60px;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+    padding-top: 30px;
+    z-index: 1;
+
+}
+
+.inner_main_menu ul li{
+    float: none;
+    display: inline-block;
+    position: relative;  
+}
+
+.inner_main_menu ul li:nth-child(1){
+    float: left;
+}
+
+.inner_main_menu ul li a {
+    color: #262626;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.inner_main_menu ul li a:hover {
+    color: #eb3332;   
+    transition: 0.5s;
+    font-weight: bold;
+    
+}
+
+.inner_main_menu ul li ul {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 200px;
+    padding: 0;
+    display: none;
+    margin: 0; 
+}
+
+.inner_main_menu ul li:hover ul {
+    display: block;
+}
+
+.inner_main_menu ul li ul li {
+    float: left;
+    
+}
+
+.inner_main_menu ul li ul li a{
+    font-size: 18px; 
+    font-weight: 200px;  
+}
+
+
+.footer {
+    display: block;
+    text-align: center;
+    padding: 10px 10px 30px 10px; 
+}
+
+.footer h4 a{
+    color: black;
+   
+}
+
+.footer h4 a:hover {
+    color: #eb3332;   
+    transition: 0.5s;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+
+
+@media screen and (min-width: 770px){
+    .topNav {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+  .main_menu {
+      display: none;
+  }
+  
+.wrap {
+    padding: 10px;
+    
+}
+
+body {
+    top: 80px;
+    background-color: #9fd7fd;
+}
+ 
+}
+
+@media screen and (max-height: 1024px) {
+     .container {
+        max-width: 100%;
+        height: 100%;
+         
+     }
+    }
+
+    @media screen and (max-height: 1366px) {
+        .container {
+           max-width: 100%;
+           height: 100%;
+            
+        }
+       }
