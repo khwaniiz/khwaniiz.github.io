@@ -197,28 +197,6 @@ span {
     font-weight: 200px;  
 }
 
-
-.footer {
-    display: block;
-    text-align: center;
-    padding: 10px 10px 30px 10px; 
-}
-
-.footer h4 a{
-    color: black;
-   
-}
-
-.footer h4 a:hover {
-    color: #eb3332;   
-    transition: 0.5s;
-    font-weight: bold;
-    text-decoration: none;
-    
-}
-
-
-
 @media screen and (min-width: 770px){
     .topNav {
         display: none;
