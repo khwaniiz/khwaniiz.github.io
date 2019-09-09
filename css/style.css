@@ -197,6 +197,31 @@ span {
     font-weight: 200px;  
 }
 
+
+.footer {
+    display: flex;
+    margin-top: 120px;
+    justify-content: center;
+    width: 100%;
+   
+}
+.email, .location, .instagram {
+    padding: 10px;
+    color: grey;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.instagram a {
+    color: grey;
+}
+
+.instagram a:hover{
+    color: #eb3332;   
+    transition: 0.5s;
+    font-weight: bold;
+}
+
 @media screen and (min-width: 770px){
     .topNav {
         display: none;
@@ -217,6 +242,11 @@ span {
 body {
     top: 80px;
     background-color: #9fd7fd;
+}
+    
+.footer {
+   flex-direction: column-reverse;
+   margin-top: 80px;
 }
  
 }
